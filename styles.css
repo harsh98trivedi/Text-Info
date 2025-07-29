@@ -1,0 +1,98 @@
+/* Color variables for dark mode */
+
+:root {
+  --bg-color: #181820;
+  --text-color: #e1e8f7;
+  --border-color: #5a5f76;
+}
+
+/* Body and text colors */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #8b5cf6; /* Tailwind purple-500 */
+  box-shadow: 0 0 6px #8b5cf6;
+}
+
+/* Color classes for stats */
+.b-red { color: #f87171; }
+.b-green { color: #34d399; }
+.b-yellow { color: #facc15; }
+.b-purple { color: #a78bfa; }
+.b-indigo { color: #60a5fa; }
+.b-cyan { color: #22d3ee; }
+.b-fuchsia { color: #d946ef; }
+.b-blue { color: #3b82f6; }
+
+/* Minimalist clean scrollbar with smooth hover transition for textarea */
+textarea.custom-scroll {
+  /* Retain background, text, border, etc. */
+  min-height: 8rem;
+  background: #181820;
+  color: #e1e8f7;
+  border: 2px solid #a78bfa;
+  resize: vertical; /* Allow vertical resize for user convenience */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(167, 139, 250, 0.4) transparent; /* thumb color with 40% opacity, transparent track */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Firefox scrollbar track */
+textarea.custom-scroll::-moz-scrollbar-track {
+  background: transparent;
+}
+
+/* Firefox scrollbar thumb */
+textarea.custom-scroll::-moz-scrollbar-thumb {
+  background-color: rgba(167, 139, 250, 0.4);
+  border-radius: 9999px; /* fully rounded */
+  transition: background-color 0.3s ease;
+}
+
+/* Webkit browsers scrollbar */
+textarea.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+textarea.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(167, 139, 250, 0.4);
+  border-radius: 9999px; /* fully rounded */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for scrollbar thumb */
+textarea.custom-scroll:hover::-webkit-scrollbar-thumb,
+textarea.custom-scroll:focus::-webkit-scrollbar-thumb {
+  background-color: rgba(167, 139, 250, 0.75);
+}
+
+textarea.custom-scroll:hover::-moz-scrollbar-thumb,
+textarea.custom-scroll:focus::-moz-scrollbar-thumb {
+  background-color: rgba(167, 139, 250, 0.75);
+}
+
+/* Focus ring & border */
+textarea.custom-scroll:focus {
+  outline: none;
+  border-color: #c084fc; /* brighter purple (Tailwind purple-400) */
+  box-shadow: 0 0 0 2px #c084fc;
+}
