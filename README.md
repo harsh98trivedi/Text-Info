@@ -1,5 +1,5 @@
-# Text Info – SMS Character Counter & Encoding Checker  
-![Text Info](meta.jpg)
+# [Text Info – SMS Character Counter & Encoding Checker](https://harsh98trivedi.github.io/Text-Info/)
+[![Text Info](meta.jpg)](https://harsh98trivedi.github.io/Text-Info/)
 
 **Text Info** is a clean and smart web app that helps you count characters, words, symbols, and more while checking the SMS encoding type in real time. It’s perfect for anyone composing messages that need to stay within SMS limits and encoding standards.
 
